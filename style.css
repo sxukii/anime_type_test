@@ -181,8 +181,8 @@ body {
    
    
 .start-image img {   
-    width: 200px;   
-    height: 200px;   
+    width: 205px;   
+    height: 205px;   
    
     object-fit: contain;   
    
@@ -321,22 +321,19 @@ body {
  
 @media (max-width: 480px) { 
  
-    .container { 
-        padding: 24px 20px; 
-    } 
- 
-    #start-screen { 
-        min-height: calc(100vh - 48px); 
-    } 
- 
- 
-    /* ======================================== 
-       모바일 메인 타이틀 
-       디자인은 PC와 동일 
-    ======================================== */ 
+
+    .container {
+        padding: 24px 20px;
+    }
+
+    #start-screen {
+        min-height: calc(100vh - 48px);
+
+        transform: translateY(2vh);
+    }
  
     .main-title { 
-        font-size: 52px; 
+        font-size: 55px; 
  
         letter-spacing: -4px; 
  
@@ -344,17 +341,14 @@ body {
     } 
  
  
-    /* ======================================== 
-       시작 이미지 
-    ======================================== */ 
  
     .start-image { 
         margin: 0 0 18px; 
     } 
  
     .start-image img { 
-        width: 170px; 
-        height: 170px; 
+        width: 195px; 
+        height: 195px; 
     } 
  
  
@@ -417,8 +411,8 @@ body {
    
    
     .start-image img {   
-        width: 145px;   
-        height: 145px;   
+        width: 150px;   
+        height: 150px;   
     }   
    
    
