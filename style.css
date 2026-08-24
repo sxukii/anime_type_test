@@ -1,0 +1,1317 @@
+/* ========================================   
+   폰트   
+======================================== */   
+   
+@font-face {   
+    font-family: "Galmuri9";   
+    src: url("./fonts/Galmuri9.ttf") format("truetype");   
+    font-weight: normal;   
+    font-style: normal;   
+}   
+   
+@font-face {   
+    font-family: "DNFBitBitv2";   
+    src: url("./fonts/DNFBitBitv2.ttf") format("truetype");   
+    font-weight: normal;   
+    font-style: normal;   
+}   
+  
+@font-face {  
+    font-family: "Galmuri11";  
+    src: url("./fonts/Galmuri11.ttf") format("truetype");  
+    font-weight: normal;  
+    font-style: normal;  
+}  
+   
+   
+/* ========================================   
+   기본 설정   
+======================================== */   
+   
+* {   
+    margin: 0;   
+    padding: 0;   
+    box-sizing: border-box;   
+}   
+   
+html {   
+    scroll-behavior: smooth;   
+}   
+   
+body {   
+    font-family: "Galmuri9", sans-serif;   
+   
+    background: #F9F3FF;   
+   
+    color: #000000;   
+   
+    min-height: 100vh;   
+   
+    overflow-x: hidden;   
+}   
+   
+   
+/* ========================================   
+   전체 컨테이너   
+======================================== */   
+   
+.container {   
+    width: 100%;   
+    max-width: 560px;   
+   
+    min-height: 100vh;   
+   
+    margin: 0 auto;   
+   
+    padding: 30px 24px;   
+}   
+   
+   
+/* ========================================   
+   화면 전환   
+======================================== */   
+   
+.screen {   
+    display: none;   
+   
+    animation: fadeUp 0.4s ease;   
+}   
+   
+.screen.active {   
+    display: block;   
+}   
+   
+   
+@keyframes fadeUp {   
+   
+    from {   
+        opacity: 0;   
+        transform: translateY(15px);   
+    }   
+   
+    to {   
+        opacity: 1;   
+        transform: translateY(0);   
+    }   
+   
+}   
+   
+   
+/* ========================================   
+   시작 화면   
+======================================== */   
+   
+#start-screen {   
+    min-height: calc(100vh - 60px);   
+   
+    display: none;   
+   
+    flex-direction: column;   
+   
+    align-items: center;   
+   
+    justify-content: center;   
+   
+    text-align: center;   
+}   
+   
+   
+#start-screen.active {   
+    display: flex;   
+}   
+   
+   
+/* ======================================== 
+   메인 타이틀 
+======================================== */ 
+ 
+.main-title { 
+    position: relative; 
+    z-index: 2; 
+ 
+    margin: 0 0 18px; 
+ 
+    font-family: "DNFBitBitv2", "Galmuri11", sans-serif; 
+ 
+    font-size: 50px; 
+    line-height: 1.25; 
+    letter-spacing: -1.5px; 
+    text-align: center; 
+ 
+    display: inline-block; 
+ 
+    background: linear-gradient( 
+        180deg, 
+        #EB42D2 0%, 
+        #1F00B7 100% 
+    ); 
+ 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+ 
+ 
+    filter:  
+        drop-shadow(1px 0px 0 #ffffff) 
+        drop-shadow(-1px 0px 0 #ffffff) 
+        drop-shadow(0px 1px 0 #ffffff) 
+        drop-shadow(0px -1px 0 #ffffff) 
+ 
+        drop-shadow(0px 3px 0 #ffa2f3) 
+        drop-shadow(3px 0px 0 #ffa2f3) 
+
+ 
+} 
+ 
+ 
+/* ========================================   
+   시작 이미지   
+======================================== */   
+   
+.start-image {   
+    display: flex;   
+   
+    justify-content: center;   
+    align-items: center;   
+   
+    margin: 5px 0 25px;   
+   
+    width: 100%;   
+}   
+   
+   
+.start-image img {   
+    width: 190px;   
+    height: 190px;   
+   
+    object-fit: contain;   
+   
+    image-rendering: pixelated;   
+   
+    display: block;   
+}   
+   
+   
+/* ========================================   
+   설명 영역   
+======================================== */   
+   
+.start-text {   
+    width: 100%;   
+   
+    text-align: center;   
+}   
+   
+   
+/* 메인 설명 */   
+   
+.start-description {   
+    font-family: "Galmuri9", sans-serif;   
+   
+    font-size: 17px;   
+   
+    line-height: 1.6;   
+   
+    color: #000000;   
+   
+    margin-bottom: 25px;   
+}   
+   
+   
+/* 서브 설명 */   
+   
+.start-sub-description {   
+    font-family: "Galmuri9", sans-serif;   
+   
+    font-size: 14px;   
+   
+    line-height: 2;   
+   
+    color: #000000;   
+}   
+   
+   
+/* ========================================   
+   아래 화살표   
+======================================== */   
+   
+.start-arrow {   
+    margin: 12px 0 12px;   
+   
+    font-family: Arial, sans-serif;   
+   
+    font-size: 14px;   
+   
+    color: #000000;   
+   
+    line-height: 1;   
+   
+    animation: arrowBounce 1.2s infinite ease-in-out;   
+}   
+   
+   
+@keyframes arrowBounce {   
+   
+    0%,   
+    100% {   
+        transform: translateY(0);   
+    }   
+   
+    50% {   
+        transform: translateY(4px);   
+    }   
+   
+}   
+   
+   
+/* ========================================   
+   시작 버튼   
+======================================== */   
+   
+.main-btn {   
+    width: min(360px, 100%);   
+   
+    padding: 17px 20px;   
+   
+    border: 2px solid #999999;   
+   
+    border-radius: 24px;   
+   
+    background: #ffffff;   
+   
+    color: #000000;   
+   
+    font-family: "Galmuri9", sans-serif;   
+   
+    font-size: 16px;   
+   
+    font-weight: normal;   
+   
+    cursor: pointer;   
+   
+    transition:   
+        transform 0.15s ease,   
+        background 0.15s ease,   
+        border-color 0.15s ease;   
+   
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);   
+}   
+   
+   
+.main-btn:hover {   
+    background: #f3eaff;   
+   
+    border-color: #777777;   
+   
+    transform: translateY(-2px);   
+}   
+   
+   
+.main-btn:active {   
+    transform: translateY(1px);   
+   
+    box-shadow: none;   
+}   
+   
+   
+   
+/* ======================================== 
+   모바일 
+======================================== */ 
+ 
+@media (max-width: 480px) { 
+ 
+    .container { 
+        padding: 24px 20px; 
+    } 
+ 
+    #start-screen { 
+        min-height: calc(100vh - 48px); 
+    } 
+ 
+ 
+    /* ======================================== 
+       모바일 메인 타이틀 
+       디자인은 PC와 동일 
+    ======================================== */ 
+ 
+    .main-title { 
+        font-size: 52px; 
+ 
+        letter-spacing: -4px; 
+ 
+        margin-bottom: 15px; 
+    } 
+ 
+ 
+    /* ======================================== 
+       시작 이미지 
+    ======================================== */ 
+ 
+    .start-image { 
+        margin: 0 0 18px; 
+    } 
+ 
+    .start-image img { 
+        width: 170px; 
+        height: 170px; 
+    } 
+ 
+ 
+    .start-description { 
+        font-size: 15px; 
+        margin-bottom: 22px; 
+    } 
+ 
+ 
+    .start-sub-description { 
+        font-size: 13px; 
+        line-height: 2; 
+    } 
+ 
+ 
+    .start-arrow { 
+        margin: 11px 0; 
+    } 
+ 
+ 
+    .main-btn { 
+        width: 100%; 
+        max-width: 360px; 
+ 
+        padding: 16px 20px; 
+ 
+        font-size: 15px; 
+    } 
+
+        #quiz-screen {
+        padding-top: 25px;
+    }
+
+}                               
+   
+ 
+/* ========================================   
+   아주 작은 모바일   
+======================================== */   
+   
+@media (max-height: 700px) {   
+   
+    #start-screen {   
+        justify-content: flex-start;   
+   
+        padding-top: 15px;   
+    }   
+   
+   
+    .main-title {   
+        font-size: 46px;   
+   
+        margin-bottom: 10px;   
+    }   
+   
+   
+    .start-image {   
+        margin: 0 0 12px;   
+    }   
+   
+   
+    .start-image img {   
+        width: 145px;   
+        height: 145px;   
+    }   
+   
+   
+    .start-description {   
+        margin-bottom: 14px;   
+    }   
+   
+   
+    .start-sub-description {   
+        line-height: 1.7;   
+    }   
+   
+   
+    .start-arrow {   
+        margin: 7px 0;   
+    }   
+
+    #quiz-screen {
+        padding-top: 25px;
+    }
+   
+}   
+  
+  
+/* ========================================  
+   질문 상단  
+======================================== */  
+  
+.quiz-top {  
+    margin-top: 15px;
+    margin-bottom: 15px;
+}  
+  
+.progress-bar {  
+    margin-bottom: 38px;  
+}  
+  
+   
+/* ========================================   
+   질문   
+======================================== */   
+   
+.question-box {   
+    margin-bottom: 28px;   
+}   
+   
+   
+#question {
+    font-size: 27px;
+    line-height: 1.45;
+    letter-spacing: -1.2px;
+    font-weight: 800;
+    word-break: keep-all;
+}  
+   
+   
+/* ========================================   
+   답변   
+======================================== */   
+   
+.answers {   
+    display: flex;   
+   
+    flex-direction: column;   
+   
+    gap: 10px;   
+}   
+   
+.answer-btn {   
+    width: 100%;   
+   
+    padding: 18px;   
+   
+    border: 1px solid #e6e6e6;   
+   
+    border-radius: 0;   
+   
+    background: #ffffff;   
+   
+    color: #000000;   
+   
+    text-align: left;   
+   
+    font-family: inherit;   
+   
+    font-size: 14px;   
+   
+    line-height: 1.5;   
+   
+    cursor: pointer;   
+   
+    transition: 0.2s ease;   
+}   
+   
+.answer-btn:hover {   
+    border-color: #6b35c9;   
+   
+    background: #f3eaff;   
+   
+    transform: translateX(4px);   
+}   
+   
+   
+/* ========================================  
+   결과 화면  
+======================================== */  
+  
+#result-screen {  
+    width: 100%;  
+    max-width: 560px;  
+  
+    margin: 0 auto;  
+  
+    padding: 0;  
+  
+    background: transparent;  
+  
+    position: relative;  
+  
+    text-align: center;  
+}  
+  
+  
+/* ========================================  
+   결과 카드  
+======================================== */  
+  
+.result-card {  
+  
+    --main-color: #E5474A;  
+    --light-color: #E5474A3D;  
+    --very-light-color: #FFF5F0;  
+    --border-color: #E5474A;  
+  
+    position: relative;  
+  
+    width: 100%;  
+  
+    min-height: 700px;  
+  
+    padding: 42px 42px 38px;  
+  
+    background: transparent;  
+  
+    color: #000000;  
+  
+    text-align: center;  
+  
+    overflow: hidden;  
+}  
+  
+  
+/* ========================================  
+   외곽선  
+======================================== */  
+  
+.result-card::before {  
+  
+    content: "";  
+  
+    position: absolute;  
+  
+    top: 12px;  
+    left: 12px;  
+    right: 12px;  
+    bottom: 12px;  
+  
+    border: 4px solid var(--border-color);  
+  
+    border-radius: 18px;  
+  
+    background: var(--very-light-color);  
+  
+    pointer-events: none;  
+  
+    transform: rotate(-0.25deg);  
+  
+    z-index: 0;  
+  
+    overflow: hidden;  
+}  
+  
+  
+/* ========================================  
+   상단 제목  
+======================================== */  
+  
+.result-top {  
+    position: relative;  
+    z-index: 2;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    gap: 18px;  
+    margin: 20px 0 25px;  
+  
+    font-family: "DNFBitBitv2", sans-serif;  
+    font-size: 14px;  
+    font-weight: normal;  
+    color: #000000;  
+    -webkit-text-stroke: 0;  
+  
+    white-space: nowrap;  
+}  
+  
+  
+.result-top::before,  
+.result-top::after {  
+  
+    content: "";  
+  
+    width: 120px;  
+  
+    border-top: 2px dashed #222;  
+  
+    flex-shrink: 1;  
+}  
+  
+  
+/* ========================================  
+   결과 제목  
+======================================== */  
+  
+.result-title {  
+  
+    position: relative;  
+  
+    z-index: 2;  
+  
+    margin: 20px 0 30px;  
+  
+    font-family: "DNFBitBitv2", sans-serif;  
+  
+    font-size: 48px;  
+  
+    line-height: 1.15;  
+  
+    letter-spacing: -2px;  
+  
+    font-weight: normal;  
+  
+    color: var(--main-color);  
+  
+    -webkit-text-stroke: 2px #111111;  
+  
+    word-break: keep-all;  
+}  
+  
+  
+/* ========================================  
+   캐치프레이즈  
+======================================== */  
+  
+.result-catchphrase {  
+    position: relative;  
+    z-index: 2;  
+    display: block;  
+    width: 100%;  
+    padding: 8px 12px;  
+    margin: 0 auto;  
+    border-radius: 30px;  
+    background: var(--light-color);  
+    color: #000000;  
+    font-family: "Galmuri11", "Galmuri9", sans-serif;  
+    font-size: 17px;  
+    line-height: 1.5;  
+    font-weight: normal;  
+    text-align: center;  
+    white-space: nowrap;  
+  
+    -webkit-text-stroke: 0.3px #000000;  
+}  
+  
+/* ========================================  
+   결과 설명  
+======================================== */  
+  
+.result-detail {  
+  
+    position: relative;  
+  
+    z-index: 2;  
+  
+    margin: 30px 8px 0;  
+  
+    font-family: "Galmuri9", sans-serif;  
+  
+    font-size: 15px;  
+  
+    line-height: 1.8;  
+  
+    color: #000000;  
+  
+    word-break: keep-all;  
+  
+    white-space: normal;  
+  
+    -webkit-text-stroke: 0.3px #000000;  
+}  
+  
+  
+.result-detail strong {  
+  
+    font-weight: normal;  
+  
+    color: #000000;  
+}  
+  
+  
+/* ========================================  
+   결과 장식  
+======================================== */  
+  
+.result-decoration {  
+  
+    position: absolute;  
+  
+    z-index: 3;  
+  
+    user-select: none;  
+  
+    pointer-events: none;  
+} 
+ 
+ 
+.result-decoration img { 
+ 
+    display: block; 
+ 
+    width: 42px; 
+    height: 42px; 
+ 
+    object-fit: contain; 
+ 
+    image-rendering: pixelated; 
+} 
+  
+  
+.decoration-fire { 
+ 
+    right: 30px; 
+ 
+    top: 315px; 
+} 
+ 
+ 
+.decoration-fist { 
+ 
+    left: 30px; 
+ 
+    top: 380px; 
+} 
+ 
+ 
+.decoration-star { 
+ 
+    right: 40px; 
+ 
+    top: 460px; 
+} 
+  
+  
+/* ========================================  
+   운명의 애니  
+======================================== */  
+  
+.recommend-section {  
+  
+    position: relative;  
+  
+    z-index: 2;  
+  
+    margin: 20px 0 0;  
+}  
+  
+  
+/* ========================================  
+   운명의 애니 제목  
+======================================== */  
+  
+.recommend-section h2 {  
+  
+    position: relative;  
+  
+    z-index: 3;  
+  
+    display: inline-block;  
+  
+    margin: 0;  
+  
+    padding: 8px 20px;  
+  
+    border-radius: 30px;  
+  
+    background: var(--light-color);  
+  
+    font-family: "Galmuri11", "Galmuri9", sans-serif;  
+  
+    font-size: 17px;  
+  
+    line-height: 1.2;  
+  
+    font-weight: normal;  
+  
+    letter-spacing: 0;  
+  
+    color: #000000;  
+  
+    transform: translateY(17px);  
+  
+    -webkit-text-stroke: 0.2px #000000;  
+}  
+  
+  
+/* ========================================  
+   추천 애니 흰색 박스  
+======================================== */  
+  
+.anime-list {  
+  
+    position: relative;  
+  
+    display: flex;  
+  
+    flex-direction: row;  
+  
+    justify-content: center;  
+  
+    align-items: flex-start;  
+  
+    gap: 10px;  
+  
+    width: 100%;  
+  
+    min-height: 150px;  
+  
+    padding: 30px 18px 22px;  
+  
+    background: #ffffff;  
+  
+    border-radius: 20px;  
+  
+    text-align: center;  
+}  
+  
+  
+/* ========================================  
+   애니 카드  
+======================================== */  
+  
+.anime-card {  
+  
+    flex: 1;  
+  
+    min-width: 0;  
+  
+    padding: 0;  
+  
+    margin: 0;  
+  
+    text-align: center;  
+}  
+  
+  
+.anime-number {  
+    display: none;  
+}  
+  
+  
+/* ========================================  
+   애니 이미지  
+======================================== */  
+  
+.anime-card img {  
+  
+    display: block;  
+  
+    width: 100%;  
+  
+    max-width: 150px;  
+  
+    aspect-ratio: 3 / 4;  
+  
+    object-fit: cover;  
+  
+    margin: 0 auto 12px;  
+  
+    image-rendering: auto;  
+}  
+  
+  
+/* ========================================  
+   애니 제목  
+======================================== */  
+  
+.anime-info {  
+  
+    width: 100%;  
+}  
+  
+  
+.anime-info h3 {  
+  
+    margin: 0;  
+  
+    font-family: "Galmuri9", sans-serif;  
+  
+    font-size: 14px;  
+  
+    line-height: 1.6;  
+  
+    font-weight: normal;  
+  
+    color: #000000;  
+  
+    word-break: keep-all;  
+  
+    -webkit-text-stroke: 0.1px #000000;
+
+    white-space: normal;
+
+    word-break: keep-all;
+    
+    overflow-wrap: break-word;
+}  
+  
+  
+.anime-info h3::before {  
+    content: "〈";  
+}  
+  
+  
+.anime-info h3::after {  
+    content: "〉";  
+}  
+  
+  
+/* ========================================  
+   결과 하단 버튼  
+======================================== */  
+  
+.result-actions {  
+  
+    position: relative;  
+  
+    z-index: 5;  
+  
+    display: flex;  
+  
+    flex-direction: row;  
+  
+    align-items: center;  
+  
+    gap: 10px;  
+  
+    margin-top: 35px;  
+}  
+  
+  
+.result-actions .main-btn {  
+  
+    width: 50%;  
+  
+    padding: 17px 10px;  
+  
+}  
+  
+  
+/* ========================================  
+   이미지 저장 버튼  
+======================================== */  
+  
+.save-btn {    
+    
+    background: #ffffff;    
+    
+    color: #000000; 
+    
+    position: relative;    
+    top: -15px;    
+    
+}  
+  
+  
+.save-btn:hover {  
+  
+    background: var(--main-color);  
+  
+    filter: brightness(0.9);  
+  
+    transform: translateY(-2px);  
+}  
+  
+  
+/* ========================================  
+   다시 테스트 버튼  
+======================================== */  
+  
+.restart-btn {  
+  
+    background: #000000;  
+  
+    color: #ffffff;  
+  
+    position: relative;  
+  
+    top: -15px;  
+}  
+  
+  
+.restart-btn:hover {  
+  
+    background: #333333;  
+  
+    transform: translateY(-2px);  
+}  
+  
+  
+/* ========================================  
+   이미지 저장 중  
+======================================== */  
+  
+.save-btn.saving {  
+  
+    cursor: wait;  
+  
+    opacity: 0.7;  
+  
+    transform: none;  
+}  
+  
+  
+/* ========================================  
+   캡처 중  
+======================================== */  
+  
+#result-screen.capturing {  
+  
+    animation: none;  
+}  
+  
+  
+/* ========================================  
+   결과 카드 유형별 색상  
+======================================== */  
+  
+/*  
+    JS가 result-card에  
+    유형별 클래스를 넣어준다. 
+*/  
+  
+.result-card.hot-main {  
+  
+    --main-color: #E5474A;  
+    --border-color: #E5474A;  
+    --very-light-color: #FFF5F0;  
+}  
+  
+  
+.result-card.adventure {  
+  
+    --main-color: #00F359;  
+    --border-color: #00F359;  
+    --very-light-color: #F7FFF4;  
+}  
+  
+  
+.result-card.romance {  
+  
+    --main-color: #FF88DD;  
+    --border-color: #FF88DD;  
+    --very-light-color: #FFF4FE;  
+}  
+  
+  
+.result-card.dark-story {  
+  
+    --main-color: #D9A0FF;  
+    --border-color: #D9A0FF;  
+    --very-light-color: #FEFBFF;  
+}  
+  
+  
+.result-card.collector {  
+  
+    --main-color: #7AEEDF;  
+    --border-color: #7AEEDF;  
+    --very-light-color: #F3FCFF;  
+}  
+  
+  
+.result-card.explorer {  
+  
+    --main-color: #87CBFF;  
+    --border-color: #87CBFF;  
+    --very-light-color: #F5F8FF;  
+}  
+  
+  
+.result-card.relationship {  
+  
+    --main-color: #FFB7B8;  
+    --border-color: #FFB7B8;  
+    --very-light-color: #FFFAF9;  
+}  
+  
+  
+.result-card.dopamine {  
+  
+    --main-color: #F2FF38;  
+    --border-color: #F2FF38;  
+    --very-light-color: #F2FF38;  
+}  
+  
+  
+/* ========================================  
+   모바일 결과  
+======================================== */  
+  
+@media (max-width: 600px) {  
+  
+    #result-screen {  
+  
+        width: 100%;  
+  
+        margin: 0 auto;  
+    }  
+  
+  
+    .result-card {  
+        width: calc(100% - 20px);  
+  
+        min-height: 0;  
+  
+        padding: 35px 28px 30px;  
+  
+        margin: 45px auto 10px;  
+    }  
+  
+  
+    .result-card::before {  
+  
+        top: 10px;  
+        left: 10px;  
+        right: 10px;  
+        bottom: 10px;  
+  
+        border-width: 3px;  
+  
+        overflow: hidden;  
+    }  
+  
+  
+    .result-top {  
+  
+        gap: 10px;  
+  
+        margin-top: 18px;  
+  
+        font-size: 11px;  
+    }  
+  
+  
+    .result-top::before,  
+    .result-top::after {  
+  
+        width: 60px;  
+  
+        border-top-width: 1.5px;  
+    }  
+  
+  
+    .result-title {  
+  
+        font-size: 36px;  
+  
+        letter-spacing: -1px;  
+  
+        -webkit-text-stroke: 1.5px #111111;  
+  
+        margin-bottom: 22px;  
+    }  
+  
+  
+    .result-catchphrase {  
+  
+        padding: 9px 12px;  
+  
+        font-size: 13px;  
+  
+        white-space: normal;  
+    }  
+  
+  
+    .result-detail {  
+  
+        margin-top: 20px;  
+  
+        margin-left: 3px;  
+  
+        margin-right: 3px;  
+  
+        font-size: 12px;  
+  
+        line-height: 1.8;  
+    }  
+  
+  
+    .recommend-section {  
+  
+        margin-top: 25px;  
+    }  
+  
+  
+    .recommend-section h2 {  
+  
+        font-size: 13px;  
+  
+        padding: 7px 15px;  
+  
+        transform: translateY(15px);  
+    }  
+  
+  
+    .anime-list {  
+  
+        min-height: 130px;  
+  
+        padding: 28px 10px 18px;  
+  
+        border-radius: 17px;  
+  
+        gap: 5px;  
+    }  
+  
+  
+    .anime-info h3 {  
+  
+        font-size: 11px;  
+  
+        line-height: 1.8;  
+    }  
+  
+  
+    .anime-card img {  
+  
+        margin-bottom: 8px;  
+    }  
+  
+  
+    .decoration-fire {  
+  
+        right: 30px;  
+  
+        top: 300px;   
+    }  
+  
+  
+    .decoration-fist {  
+  
+        left: 30px;  
+  
+        top: 360px;  
+    }  
+  
+  
+  
+    .decoration-star {  
+  
+        right: 30px;  
+  
+        top: 390px;  
+    }  
+  
+  
+    .result-actions {  
+  
+        margin-top: 30px;  
+  
+        gap: 8px;  
+    }  
+  
+  
+    .result-actions .main-btn {  
+  
+        padding: 15px 10px;  
+  
+        font-size: 13px;  
+    }  
+  
+    .result-decoration img { 
+ 
+        width: 30px; 
+        height: 30px; 
+    } 
+}
