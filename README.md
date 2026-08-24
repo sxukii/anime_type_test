@@ -11,4 +11,4 @@
 
 ## 🎮 테스트하기
 
-👉 [애니 유형 테스트 시작하기](https://깃허브아이디.github.io/anime_type_test/)
+👉 [애니 유형 테스트 시작하기](https://sxukii.github.io/anime_type_test/)
