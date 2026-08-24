@@ -329,7 +329,7 @@ body {
     #start-screen {
         min-height: calc(100vh - 48px);
 
-        transform: translateY(2vh);
+        transform: translateY(30px) !important;
     }
  
     .main-title { 
@@ -379,7 +379,7 @@ body {
     } 
 
         #quiz-screen {
-        padding-top: 25px;
+        padding-top: 15px;
     }
 
 }                               
