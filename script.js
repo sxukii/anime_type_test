@@ -11,6 +11,7 @@ const questions = [
 
             {
                 text: "① 일단 직진! 직접 나서서 탐험한다.",
+                description: "여기까지 왔는데 가만히 있을 순 없잖아.",
                 score: {
                     hotMain: 2,
                     adventure: 1
@@ -19,6 +20,7 @@ const questions = [
 
             {
                 text: "② 움직이기 전에 천천히 주변부터 살핀다.",
+                description: "잠깐. 이 세계… 뭔가 이상한데?",
                 score: {
                     explorer: 2,
                     darkStory: 1
@@ -27,6 +29,7 @@ const questions = [
 
             {
                 text: "③ 혹시 함께 온 사람이 없는지 찾아본다.",
+                description: "이런 데 혼자 떨어진 건 아니겠지?",
                 score: {
                     adventure: 2,
                     relationship: 1
@@ -35,6 +38,7 @@ const questions = [
 
             {
                 text: "④ 일단 내가 여기서 뭘 할 수 있는지 시험해본다.",
+                description: "잠깐… 나도 뭔가 능력 하나쯤 생긴 거 아냐?",
                 score: {
                     collector: 2,
                     dopamine: 1
@@ -52,6 +56,7 @@ const questions = [
 
             {
                 text: "① 어떻게든 다시 데려온다.",
+                description: "적이 됐든 뭐가 됐든, 다시 데려오면 그만이야.",
                 score: {
                     relationship: 2,
                     hotMain: 1
@@ -60,6 +65,7 @@ const questions = [
 
             {
                 text: "② 왜 그런 선택을 했는지부터 알아본다.",
+                description: "네가 아무 이유 없이 이럴 리 없잖아.",
                 score: {
                     darkStory: 2,
                     relationship: 1
@@ -68,6 +74,7 @@ const questions = [
 
             {
                 text: "③ 일단 지켜본다. 무슨 수를 꾸미는지 궁금하다.",
+                description: "좋아. 어디까지 가나 한번 보자고.",
                 score: {
                     dopamine: 2,
                     explorer: 1
@@ -76,6 +83,7 @@ const questions = [
 
             {
                 text: "④ 배신한 이유보다 한 가지가 더 신경 쓰인다.",
+                description: "그래서… 너한테 나는 뭐였는데?",
                 score: {
                     emotional: 2,
                     relationship: 1
@@ -93,6 +101,7 @@ const questions = [
 
             {
                 text: "① 고민할 시간 없다. 바로 뛰어든다.",
+                description: "기다려. 이번엔 내가 지킬게.",
                 score: {
                     hotMain: 2,
                     relationship: 1
@@ -101,6 +110,7 @@ const questions = [
 
             {
                 text: "② 정면승부 대신 모두가 살아나갈 길부터 찾는다.",
+                description: "이길 필요 없어. 같이 빠져나가면 돼.",
                 score: {
                     adventure: 2,
                     explorer: 1
@@ -109,6 +119,7 @@ const questions = [
 
             {
                 text: "③ 별일 아니라는 듯 앞으로 나선다.",
+                description: "잠깐만 있어. 금방 끝내고 올게.",
                 score: {
                     collector: 2,
                     dopamine: 1
@@ -117,6 +128,7 @@ const questions = [
 
             {
                 text: "④ 무슨 일이 생겨도 동료 곁을 떠나지 않는다.",
+                description: "혼자 두고 가는 건 선택지에 없어.",
                 score: {
                     relationship: 2,
                     emotional: 1
@@ -134,6 +146,7 @@ const questions = [
 
             {
                 text: "① 지금까지 봤던 장면들을 머릿속에서 다시 맞춰본다.",
+                description: "잠깐… 그럼 처음부터 전부 의미가 달라지잖아?",
                 score: {
                     explorer: 2,
                     darkStory: 1
@@ -142,6 +155,7 @@ const questions = [
 
             {
                 text: "② 왜 그런 선택까지 할 수밖에 없었는지 듣는다.",
+                description: "대체 뭘 지키려고 여기까지 온 건데?",
                 score: {
                     darkStory: 2,
                     relationship: 1
@@ -150,6 +164,7 @@ const questions = [
 
             {
                 text: "③ 반전보다 이제 무슨 일이 터질지가 더 궁금하다.",
+                description: "그래서… 이제 더 큰 게 나온다는 거지?",
                 score: {
                     dopamine: 2,
                     explorer: 1
@@ -158,6 +173,7 @@ const questions = [
 
             {
                 text: "④ 그 사람과 함께 있던 누군가의 표정이 계속 신경 쓰인다.",
+                description: "잠깐… 둘 사이에 무슨 일이 있었던 거 아냐?",
                 score: {
                     emotional: 2,
                     relationship: 1
@@ -175,6 +191,7 @@ const questions = [
 
             {
                 text: "① 기억은 없어져도 다시 쌓으면 된다.",
+                description: "잊어버리면 어때. 다시 만나면 되잖아.",
                 score: {
                     adventure: 2,
                     hotMain: 1
@@ -183,6 +200,7 @@ const questions = [
 
             {
                 text: "② 모두를 살릴 수 있다면 내 기억쯤은 괜찮다.",
+                description: "내가 잊는 걸로 끝난다면 싼 대가지.",
                 score: {
                     hotMain: 2,
                     darkStory: 1
@@ -191,6 +209,7 @@ const questions = [
 
             {
                 text: "③ 기억이 사라지기 전에 딱 한 사람에게 말한다.",
+                description: "나중에 내가 널 몰라봐도… 네가 먼저 찾아와.",
                 score: {
                     emotional: 2,
                     relationship: 1
@@ -199,6 +218,7 @@ const questions = [
 
             {
                 text: "④ 애초에 다른 방법이 없는지부터 의심한다.",
+                description: "이런 세계에는 항상 숨겨진 루트가 있거든.",
                 score: {
                     explorer: 2,
                     collector: 1
@@ -216,6 +236,7 @@ const questions = [
 
             {
                 text: "① 오히려 웃음이 나온다.",
+                description: "좋네. 이 정도는 돼야 최종보스지.",
                 score: {
                     dopamine: 2,
                     collector: 1
@@ -224,6 +245,7 @@ const questions = [
 
             {
                 text: "② 상대를 가만히 바라보다 한마디 한다.",
+                description: "그래서… 나보다 강해?",
                 score: {
                     collector: 2,
                     dopamine: 1
@@ -232,6 +254,7 @@ const questions = [
 
             {
                 text: "③ 저런 존재가 왜 생겨났는지가 더 궁금하다.",
+                description: "이 정도 괴물이 이유 없이 나타났을 리 없어.",
                 score: {
                     darkStory: 2,
                     explorer: 1
@@ -240,6 +263,7 @@ const questions = [
 
             {
                 text: "④ 혼자 싸우겠다는 동료를 붙잡는다.",
+                description: "혼자 멋있는 척하지 마. 같이 싸우자.",
                 score: {
                     relationship: 2,
                     adventure: 1
@@ -257,6 +281,7 @@ const questions = [
 
             {
                 text: "① 지금보다 훨씬 강해질 수 있는 힘.",
+                description: "여기까지 왔는데 마지막에 질 순 없잖아.",
                 score: {
                     hotMain: 2,
                     collector: 1
@@ -265,6 +290,7 @@ const questions = [
 
             {
                 text: "② 지금까지 함께했던 모든 동료.",
+                description: "혼자서는 못 해도, 우리는 할 수 있으니까.",
                 score: {
                     adventure: 2,
                     relationship: 1
@@ -273,6 +299,7 @@ const questions = [
 
             {
                 text: "③ 이 세계의 모든 비밀이 담긴 진실.",
+                description: "끝까지 왔으면 전부 알고 가야지.",
                 score: {
                     explorer: 2,
                     darkStory: 1
@@ -281,6 +308,7 @@ const questions = [
 
             {
                 text: "④ 아무도 예상하지 못한 마지막 한 수.",
+                description: "정석대로 이겨야 한다는 법은 없잖아?",
                 score: {
                     dopamine: 2,
                     explorer: 1
@@ -298,6 +326,7 @@ const questions = [
 
             {
                 text: "① 세상을 구한 주인공이 아무렇지도 않게 일상으로 돌아간다.",
+                description: "그래서 오늘 저녁 뭐 먹지?",
                 score: {
                     collector: 2,
                     hotMain: 1
@@ -306,6 +335,7 @@ const questions = [
 
             {
                 text: "② 끝까지 서로 마음을 숨기던 두 사람이 조용히 마주 본다.",
+                description: "이제는… 말해도 되겠지?",
                 score: {
                     emotional: 2,
                     relationship: 1
@@ -314,6 +344,7 @@ const questions = [
 
             {
                 text: "③ 많은 것을 잃었지만 마지막에는 조용히 웃는다.",
+                description: "그래도… 여기까지 왔으니까.",
                 score: {
                     darkStory: 2,
                     hotMain: 1
@@ -322,6 +353,7 @@ const questions = [
 
             {
                 text: "④ 소중한 사람들이 아무 일도 없었다는 듯 함께 웃고 있다.",
+                description: "전투고 세계 멸망이고 뭐고… 이제 그냥 행복해라.",
                 score: {
                     relationship: 2,
                     emotional: 1
@@ -859,32 +891,39 @@ function showQuestion() {
 
     current.answers.forEach(answer => {
 
-        const button =
-            document.createElement("button");
+    const button =
+        document.createElement("button");
 
 
-        button.className =
-            "answer-btn";
+    button.className =
+        "answer-btn";
 
 
-        button.type =
-            "button";
+    button.type =
+        "button";
 
 
-        button.textContent =
-            answer.text;
+    button.innerHTML = `
+        <span class="answer-text">
+            ${answer.text}
+        </span>
+
+        <span class="answer-description">
+            "${answer.description}"
+        </span>
+    `;
 
 
-        button.addEventListener("click", () => {
+    button.addEventListener("click", () => {
 
-            selectAnswer(answer);
-
-        });
-
-
-        answers.appendChild(button);
+        selectAnswer(answer);
 
     });
+
+
+    answers.appendChild(button);
+
+});
 
 }
 

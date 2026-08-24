@@ -133,7 +133,7 @@ body {
  
     font-family: "DNFBitBitv2", "Galmuri11", sans-serif; 
  
-    font-size: 50px; 
+    font-size: 55px; 
     line-height: 1.25; 
     letter-spacing: -1.5px; 
     text-align: center; 
@@ -181,8 +181,8 @@ body {
    
    
 .start-image img {   
-    width: 190px;   
-    height: 190px;   
+    width: 200px;   
+    height: 200px;   
    
     object-fit: contain;   
    
@@ -475,52 +475,70 @@ body {
 }  
    
    
-/* ========================================   
-   답변   
-======================================== */   
-   
-.answers {   
-    display: flex;   
-   
-    flex-direction: column;   
-   
-    gap: 10px;   
-}   
-   
-.answer-btn {   
-    width: 100%;   
-   
-    padding: 18px;   
-   
-    border: 1px solid #e6e6e6;   
-   
-    border-radius: 0;   
-   
-    background: #ffffff;   
-   
-    color: #000000;   
-   
-    text-align: left;   
-   
-    font-family: inherit;   
-   
-    font-size: 14px;   
-   
-    line-height: 1.5;   
-   
-    cursor: pointer;   
-   
-    transition: 0.2s ease;   
-}   
-   
-.answer-btn:hover {   
-    border-color: #6b35c9;   
-   
-    background: #f3eaff;   
-   
-    transform: translateX(4px);   
-}   
-   
+/* ========================================
+   답변
+======================================== */
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.answer-btn {
+    width: 100%;
+
+    padding: 18px;
+
+    border: 1px solid #e6e6e6;
+
+    border-radius: 0;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* PC / 마우스 환경에서만 호버 효과 */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .answer-btn:hover {
+        border-color: #6b35c9;
+
+        background: #f3eaff;
+
+        transform: translateX(4px);
+    }
+
+}
+
+.answer-text {
+    display: block;
+    font-weight: 500;
+}
+
+.answer-description {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #777777;
+}
    
 /* ========================================  
    결과 화면  
@@ -941,7 +959,7 @@ body {
     white-space: normal;
 
     word-break: keep-all;
-    
+
     overflow-wrap: break-word;
 }  
   
