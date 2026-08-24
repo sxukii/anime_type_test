@@ -329,7 +329,7 @@ body {
     #start-screen {
         min-height: calc(100vh - 48px);
 
-        transform: translateY(30px) !important;
+        transform: translateY(20px) !important;
     }
  
     .main-title { 
@@ -399,7 +399,7 @@ body {
    
    
     .main-title {   
-        font-size: 46px;   
+        font-size: 50px;   
    
         margin-bottom: 10px;   
     }   
@@ -431,7 +431,7 @@ body {
     }   
 
     #quiz-screen {
-        padding-top: 25px;
+        padding-top: 15px;
     }
    
 }   
@@ -442,7 +442,7 @@ body {
 ======================================== */  
   
 .quiz-top {  
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 15px;
 }  
   
